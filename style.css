@@ -27,14 +27,13 @@ body {
 
 .card {
     background-color: var(--White);
-    border-radius: 15px;
+    border-radius: 8px;
     margin: 70px 12px ;
 }
 
 .card img {
     width: 100%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-radius: 8px 8px 0 0;
 }
 
 .container {
@@ -53,14 +52,51 @@ h2 {
 h1 {
     font-family: 'Fraunces', serif;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 31.5px;
     color: var(--Black);
+    width: 95%;
     margin: 16px 0;
 }
 
+p {
+    font-family: 'Montserrat', serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--Grey);
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
 
+.price { 
+    display: flex;
+    align-items: center;
+}
 
+.price p {
+    color: var(--Green-500);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 31.5px;
+}
 
+.price del {
+    color: var(--Grey);
+    font-family: 'Montserrat', serif;
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    text-decoration: line-through;
+}
+
+button {
+    display: flex;
+    align-items: center;    
+    background-color: var(--Green-500);
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+}
 
 
 
