@@ -31,6 +31,10 @@ body {
     margin: 70px 12px ;
 }
 
+.card .desktop {
+    display: none;
+}
+
 .card .mobile {
     width: 100%;
     border-radius: 8px 8px 0 0;
@@ -120,18 +124,65 @@ button:hover {
     }
 }
 
-@media (min-width: 1440px) and (max-width: 1440px){
+@media (min-width: 1440px) and (max-width: 2560px){
+
+    body {
+        height: 100vh;
+    }
     .card {
         display: flex;
-        flex-direction: row;
-        max-width: 600px;
+        width: 602px;
         height: 450px;
-        border-radius: 10px;
-        margin: 70px 20px;
-        background-color: var(--White);
     }
-    
-    
+    .card .mobile {
+        display: none;
+    }
+    .card .desktop {
+        display: block;
+        width: 50%;
+        height: 100%;
+        border-radius: 8px 0 0 8px;
+    }
+    .container {
+        width: 50%;
+        padding: 33px 32px;
+    }
+
+    .container h2 {
+        font-size: 13px;
+        letter-spacing: 6px;
+    }
+
+    .container h1 {
+        font-size: 35px;
+        line-height: 35px;
+        margin-bottom: 33px;
+    }
+    .container p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .price {
+        margin-bottom: 5px;
+    }
+
+    .price p {
+        font-size: 36px;
+    }
+    .price del {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    button {
+        width: 233px;
+        height: 47px;
+        font-size: 15px;
+        font-weight: 700;
+        border: none;
+    }
+
+
 }
 
 
